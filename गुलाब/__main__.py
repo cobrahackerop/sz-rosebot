@@ -70,7 +70,7 @@ async def start_bot():
 |                                             |  
 |          Deployed Successfully              |  
 |         (C) 2022-2023 by @XD_LIF        | 
-|          Greetings from supun  :)           |
+|          Greetings from Aliza  :)           |
 |_____________________________________________|  
                                                                                                
     """)
