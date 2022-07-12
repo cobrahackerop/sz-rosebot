@@ -69,7 +69,7 @@ async def start_bot():
  _____________________________________________   
 |                                             |  
 |          Deployed Successfully              |  
-|         (C) 2021-2022 by @szteambots        | 
+|         (C) 2022-2023 by @XD_LIF        | 
 |          Greetings from supun  :)           |
 |_____________________________________________|  
                                                                                                
@@ -87,31 +87,31 @@ home_keyboard_pm = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text=" ➕ Add Me To Your Group ➕ ",
+                text=" ➕ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ➕ ",
                 url=f"http://t.me/{BOT_USERNAME}?startgroup=new",
             )
         ],
         [
            InlineKeyboardButton(
-                text=" ℹ️ About", callback_data="_about"
+                text=" ℹ️ ᴀʙᴏᴜᴛ", callback_data="_about"
             ),
             InlineKeyboardButton(
-                text="🌍 languages ", callback_data="_langs"
-            ),
-        ],
-        [
-            InlineKeyboardButton(
-                text="📮 How To Use Me", callback_data="bot_commands"
+                text="🌍 ʟᴀɴɢᴜᴀɢᴇs ", callback_data="_langs"
             ),
         ],
         [
             InlineKeyboardButton(
-                text="🌐 My Website",
-                url=f"https://szrosebot.ml",
+                text="👀 How To Use Me ", callback_data="bot_commands"
+            ),
+        ],
+        [
+            InlineKeyboardButton(
+                text="♥️ ᴍʏ ᴡᴏʀʟᴅ ",
+                url=f"https://t.me/DREEAM_CLUB",
             ),
             InlineKeyboardButton(
-                text="🔰News Channel",
-                url=f"https://t.me/szroseupdates",
+                text="🖤ɴᴇᴡs ᴄʜᴀɴɴᴇʟ ",
+                url=f"https://t.me/DREEAM_CLUB",
             )
         ],
     ]
@@ -121,14 +121,14 @@ keyboard = InlineKeyboardMarkup(
     [
         [
             InlineKeyboardButton(
-                text="📚 Commands & help",
+                text="📚 ᴄᴏᴍᴍᴀɴᴅ & ʜᴇʟᴘ",
                 url=f"t.me/{BOT_USERNAME}?start=help",
             )
         ]
     ]
 )
 
-IMG = ["https://telegra.ph/file/c8f5c1dd990ca9a3d8516.jpg",
+IMG = ["https://telegra.ph/file/9f26e5550c80533220d3d.jpg",
        "https://telegra.ph/file/77cc3154b752ce822fd52.jpg",
        "https://telegra.ph/file/e72fb0b6a7fba177cf4c7.jpg",
        "https://telegra.ph/file/8738a478904238e367939.jpg",
@@ -184,13 +184,13 @@ async def start(client, message: Message, _):
         for user in users:
           served_users.append(int(user["bot_users"]))
         await message.reply(f"""
-[👋]({random.choice(IMG)}) Hey there {message.from_user.mention}, 
+[👋]({random.choice(IMG)}) 𝗛𝗲𝘆 𝗧𝗵𝗲𝗿𝗲 {message.from_user.mention}, 
 
-   My name is Rose, an  advanced telegram Group management Bot For helpYou Protect Your Groups & Suit For All Your Needs. 
-I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
+   𝗠𝘆 𝗡𝗮𝗺𝗲 𝗜𝘀 𝗔𝗹𝗶𝘇𝗮, 𝗔𝗻 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗚𝗿𝗼𝘂𝗽 𝗣𝗿𝗼𝘁𝗲𝗰𝘁𝗼𝗿 𝗔𝗻𝗱 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 𝗕𝗼𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽𝗬𝗼𝘂 𝗣𝗿𝗼𝘁𝗲𝗰𝘁 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 & 𝗦𝘂𝗶𝘁 𝗙𝗼𝗿 𝗔𝗹𝗹 𝗬𝗼𝘂𝗿 𝗡𝗲𝗲𝗱𝘀. 
+𝗜 𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆 𝗠𝗮𝗻𝗮𝗴𝗲 𝗔𝗯𝗼𝘂𝘁 `{len(served_chats)}` 𝗚𝗿𝗼𝘂𝗽𝘀.𝗜 𝗛𝗮𝘃𝗲 𝗢𝘃𝗲𝗿 `{len(served_users)}` 𝗨𝘀𝗲𝗿𝘀
 
-⚒ Send Me /help For Get Commands. 
-👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma
+⚒ 𝗦𝗲𝗻𝗱 𝗠𝗲 /help 𝗙𝗼𝗿 𝗚𝗲𝘁 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀. 
+🔥𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : @XD_LIF
 """,
             reply_markup=home_keyboard_pm,
         )
@@ -275,14 +275,13 @@ async def startcq(client,CallbackQuery, _):
         served_users.append(int(user["bot_users"]))
     await CallbackQuery.message.edit(
             text=f"""
-👋 Hey there {CallbackQuery.from_user.mention}, 
+👋 𝗛𝗲𝘆 𝗧𝗵𝗲𝗿𝗲 {CallbackQuery.from_user.mention}, 
 
-   My name is Rose ,an  advanced telegram Group management Bot For help 
-You Protect Your Groups & Suit For All Your Needs. 
-I currently manage about `{len(served_chats)}` groups.I have over `{len(served_users)}` users
+   𝗠𝘆 𝗡𝗮𝗺𝗲 𝗜𝘀 𝗔𝗹𝗶𝘇𝗮, 𝗔𝗻 𝗔𝗱𝘃𝗮𝗻𝗰𝗲 𝗧𝗲𝗹𝗲𝗴𝗿𝗮𝗺 𝗚𝗿𝗼𝘂𝗽 𝗣𝗿𝗼𝘁𝗲𝗰𝘁𝗼𝗿 𝗔𝗻𝗱 𝗠𝗮𝗻𝗮𝗴𝗲𝗺𝗲𝗻𝘁 𝗕𝗼𝘁 𝗙𝗼𝗿 𝗛𝗲𝗹𝗽𝗬𝗼𝘂 𝗣𝗿𝗼𝘁𝗲𝗰𝘁 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽 & 𝗦𝘂𝗶𝘁 𝗙𝗼𝗿 𝗔𝗹𝗹 𝗬𝗼𝘂𝗿 𝗡𝗲𝗲𝗱𝘀. 
+𝗜 𝗖𝘂𝗿𝗿𝗲𝗻𝘁𝗹𝘆 𝗠𝗮𝗻𝗮𝗴𝗲 𝗔𝗯𝗼𝘂𝘁 `{len(served_chats)}` 𝗚𝗿𝗼𝘂𝗽𝘀.𝗜 𝗛𝗮𝘃𝗲 𝗢𝘃𝗲𝗿 `{len(served_users)}` 𝗨𝘀𝗲𝗿𝘀
 
- ⚒ Send Me /help For Get Commands. 
-👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma
+⚒ 𝗦𝗲𝗻𝗱 𝗠𝗲 /help 𝗙𝗼𝗿 𝗚𝗲𝘁 𝗖𝗼𝗺𝗺𝗮𝗻𝗱𝘀. 
+🔥𝗗𝗲𝘃𝗲𝗹𝗼𝗽𝗲𝗿 : @XD_LIF
 """,
             disable_web_page_preview=True,
             reply_markup=home_keyboard_pm)
@@ -293,7 +292,7 @@ async def help_parser(name, keyboard=None):
         keyboard = InlineKeyboardMarkup(paginate_modules(0, HELPABLE, "help"))
     return (
 """
-**Welcome to help menu**
+**Welcome to help menu**                     
 I'm a group management bot with some useful features.
 You can choose an option below, by clicking a button.
 If you have any bugs or questions on how to use me, 
@@ -339,7 +338,7 @@ async def help_button(client, query, _):
                 "Here is the help for", HELPABLE[module].__MODULE__
             )
             + HELPABLE[module].__HELP__
-            + "\n👨‍💻Dᴇᴠᴇʟᴏᴘᴇʀ : @supunma"
+            + "\n🔥Dᴇᴠᴇʟᴏᴘᴇʀ : @XD_LIF"
         )
         if hasattr(HELPABLE[module], "__helpbtns__"):
                        button = (HELPABLE[module].__helpbtns__) + [[InlineKeyboardButton("« Back", callback_data="bot_commands")]]
